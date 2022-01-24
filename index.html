@@ -1,0 +1,585 @@
+<html>
+
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Ultra:400|Slabo+13px:400"
+    nonce="">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+
+    }
+
+    a,
+    a:visited {
+      color: black;
+    }
+
+    .menu a,
+    .menu a:visited {
+      text-decoration: none;
+    }
+
+    hr {
+      margin-top: 8rem;
+      width: 50px;
+      border: solid 1px black;
+    }
+
+    h3 {
+      margin-top: 3rem;
+      margin-bottom: .5rem;
+    }
+
+    .main {
+      height: 100%;
+    }
+
+    .content {
+      padding: 0 4rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .title-row {
+      display: flex;
+      justify-content: center;
+    }
+
+    .logo {
+      width: 20rem;
+      margin: 2rem 0 0 0;
+    }
+
+    .header {
+      padding: 1rem 0;
+      align-items: center;
+      border-bottom: 1px solid #ccc;
+      box-shadow: 0 0 5px grey;
+      padding: 0 4rem;
+    }
+
+    .menu {
+      /* background-color: #eee; */
+      display: flex;
+      justify-content: space-between;
+      max-width: 1200px;
+      margin: 0 auto;
+
+    }
+
+    .menu>.menu-elements {
+      display: flex;
+    }
+
+    .material-icons {
+      width: 25px;
+      cursor: pointer;
+    }
+
+    .menu-elements {
+      list-style: none;
+    }
+
+    .menu-element {
+      margin: 0 2rem;
+      cursor: pointer;
+      font-size: 1.2rem;
+    }
+
+    .menu-element:hover {
+      font-weight: bold;
+      text-decoration: underline;
+    }
+
+    .slideshow {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .slides {
+      box-sizing: border-box;
+      border-radius: 4px;
+      margin: 0 2rem 0 2rem;
+      max-height: calc(100vh - 200px);
+      max-width: 90%;
+    }
+
+    .contact-content {
+      display: flex;
+    }
+
+    .contact-content>.left {
+      flex: 1;
+      /* display: flex;
+      justify-content: center; */
+    }
+
+    .contact-content>.right {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+    }
+
+    .pricing-content {
+      display: flex;
+      justify-content: center;
+    }
+
+    .price-element {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .rooms {
+      display: flex;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+    }
+
+    .rooms .room {
+      /* background-color: lightblue; */
+      /* padding: .5rem; */
+      max-width: 450px;
+    }
+
+    .rooms img {
+      width: 100%;
+    }
+
+    .rooms h2 {
+      text-align: center;
+    }
+
+    h1 {
+      font-family: 'Ultra', serif;
+      font-weight: 700;
+      ;
+    }
+
+
+    .studio-description {
+      display: flex;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .studio-description li {
+      padding: .5rem 0;
+    }
+
+    .studio-description ul {
+      list-style: none;
+    }
+
+    .room-description {
+      margin: 0;
+      padding: 20px;
+      /* list-style:none; */
+    }
+
+    .room-description li {
+      padding: .5rem 0;
+    }
+
+    .welcome-description {
+      text-align: center;
+    }
+  </style>
+
+</head>
+
+<body>
+  <div class="main">
+    <div class="header">
+      <nav class="menu">
+
+        <h1>TLMT Studio</h1>
+        <ul class="menu-elements">
+          <li class="menu-element"><a href="tel:0041792768141" >Jetzt Anrufen</a></li>
+          <li class="menu-element"><a href="#contact">Kontakt</a></li>
+          <li class="menu-element"><a
+              href="https://www.google.com/maps/dir//TLMT+Studio/data=!4m8!4m7!1m0!1m5!1m1!1s0x479b1f5088ab10a1:0xb96230db6b2aea78!2m2!1d9.4891959!2d47.4666767">Route
+              Anzeigen</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="content">
+
+      <div id="welcome">
+        <div class="title-row">
+          <!-- <h1>TLMT Studio</h1> -->
+          <img src="./resource/logo.png" class="logo" />
+        </div>
+        <div class="welcome-description">
+          <p>Music Recording Studio</p>
+          <div style="
+margin: 3rem 0 4rem 0; 
+            ">
+
+            <a style="text-transform: uppercase; 
+              cursor: pointer; 
+              border-radius: 4px; 
+              background-color: #cc171e; 
+              padding: 1rem 3rem; 
+              color: white; 
+              font-size: 1rem;"
+              href="#contact">
+              Kontakt
+            </a>
+          </div>
+          <img style="margin-top: 2rem; width: 100%" src="resource/studio_000.jpeg" />
+        </div>
+      </div>
+      <hr />
+      <div id="studio">
+        <div class="title-row">
+          <h1 class="title">Kundenbewertungen</h1>
+        </div>
+        <div style="text-align: center; ">
+          <div style="text-align: center; display: flex; justify-content: space-between; flex-wrap: wrap;">
+            <div
+              style="margin: 1rem; background-color: #cc171e80; border-radius: 1rem; text-align: center;width: 300px; padding: 1rem;">
+              <img src="resource/portrait-walo.png" style="
+              border-radius: 9999px; 
+              width:128; height:128px; 
+              margin: 0 auto;
+              object-fit: cover;
+              " />
+              <p style="font-weight: bold; font-size:1.5rem;">
+                Technisches Knowhow,
+                Flexibilität, faire Preisgestaltung, kreative Mitarbeit und die Zuverlässigkeit zeichnen Josh aus
+                und sind mehr als
+                empfehlenswert. Er kennt keine Probleme, sondern nur Lösungen.
+              </p>
+              <p style="font-weight: 200;">Walter Bortolleto - Pilots of the Daydreams, Acoustic 4</p>
+            </div>
+            <div
+              style="margin: 1rem; background-color: #cc171e80; border-radius: 1rem; text-align: center;width: 300px; padding: 1rem;">
+
+              <img src="resource/portrait-han.jpeg" style="
+              border-radius: 9999px; 
+              width:128; height:128px; 
+              margin: 0 auto;
+              object-fit: cover;
+              " />
+              <p style="font-weight: bold; font-size:1.5rem;">
+                Absolutely loved working with Josh at his studio. Very professional and straight to the point!
+
+
+              </p>
+              <p style="font-weight: 200;">Han Beyli - Déjan</p>
+            </div>
+            <div
+              style="margin: 1rem; background-color: #cc171e80; border-radius: 1rem; text-align: center;width: 300px; padding: 1rem;">
+
+              <img src="resource/portrait-biagio.jpeg" style="
+              border-radius: 9999px; 
+              width:128; height:128px; 
+              margin: 0 auto;
+              object-fit: cover;
+              " />
+              <p style="font-weight: bold; font-size:1.5rem;">
+                Klein aber fein. Persönliche und familiäre Atmosphäre. Top Service. Sehr empfehlenswert.
+              </p>
+              <p style="font-weight: 100;">Biagio Anania - Pilots of the Daydreams</p>
+            </div>
+          </div>
+          <div style="margin: 4rem 0;">
+            <a style=" margin: 0 1rem;"
+              href="https://search.google.com/local/writereview?placeid=ChIJoRCriFAfm0cReOoqa9swYrk">TLMT Studio
+              bewerten</a>
+            <a style=" margin: 0 1rem;"
+              href="https://search.google.com/local/reviews?placeid=ChIJoRCriFAfm0cReOoqa9swYrk">Weitere Bewertungen
+              lesen</a>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <div id="studio">
+        <div class="title-row">
+          <h1 class="title">Studio</h1>
+        </div>
+        <div class="studio-description">
+          <ul>
+            <li>2 Aufnahmeräume / 1 Regieraum</li>
+            <li>Grosse Fenster zwischen den Räumen für optimale Sichtverbindung</li>
+            <li>100 Akustikmodule für optimale Raumakustik</li>
+            <li>60 mobile Akustikmodule um die Raumakustik den Bedürfnissen anzupassen</li>
+          </ul>
+        </div>
+        <div class="rooms">
+          <div class="room">
+            <h2>Recording Room A (35m<sup>2</sup>)</h2>
+            <img src="./resource/studio_room_a.jpg" />
+            <ul class="room-description">
+              <li>Der Aufnahmeraum mit Live Charakter. Mit den 38 installierten Diffusoren ideal für Drums und Chöre.
+              </li>
+              <li>Perfekt für Live-Einspielungen mit hervorragender akustischer Trennung</li>
+              <li>Sichtverbindung in Aufnahmeraum B.</li>
+            </ul>
+          </div>
+          <div class="room">
+            <h2>Recording Room B (15m<sup>2</sup>)</h2>
+            <img src="./resource/studio_room_b.jpg" />
+            <ul class="room-description">
+
+              <li>
+                Optimal für Gesangs- und Sprachaufnahmen, Instrumental-Overdubs und Lautes, das nicht stören soll
+              </li>
+              <li>
+                Dank flexiblen Akustik Modulen kann die Akustik in kürzester Zeit für lebendigere Instrumente
+                wie Akustik Gitarren oder kleiner Percussion optimiert werden.
+
+              </li>
+              <li>Sichtverbindung in Aufnahmeraum A und in den Regieraum.</li>
+            </ul>
+          </div>
+          <div class="room">
+            <h2>Control Room (21m<sup>2</sup>)</h2>
+            <img src="./resource/studio_control_room.jpg" />
+            <ul class="room-description">
+              <li>
+                Akustisch optimierter Abhörraum. Hier fliessen alle Signale zusammen.
+              </li>
+              <li>Vier verschiedene Abhörsysteme.</li>
+              <li>Sichtverbindung in Aufnahmeraum B.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <div id="photos">
+        <div class="title-row">
+          <h1 class="title">Photos</h1>
+        </div>
+        <div class="slideshow">
+          <i onClick="nextImage(-1)" class="material-icons">arrow_backwards</i>
+          <img class="slides" src="./resource/studio_007.jpg" />
+          <img class="slides" src="./resource/studio_room_a.jpg" />
+          <img class="slides" src="./resource/studio_001.jpg" />
+          <img class="slides" src="./resource/studio_room_b.jpg" />
+          <img class="slides" src="./resource/studio_control_room.jpg" />
+          <img class="slides" src="./resource/studio_004.jpg" />
+          <img class="slides" src="./resource/studio_005.jpg" />
+          <img class="slides" src="./resource/studio_002.jpg" />
+          <img class="slides" src="./resource/studio_008.jpg" />
+          <img class="slides" src="./resource/studio_006.jpg" />
+          <img class="slides" src="./resource/studio_003.jpg" />
+          <i onClick="nextImage(1)" class="material-icons">arrow_forwards</i>
+        </div>
+
+      </div>
+      <div style="margin: 4rem 0;text-align: center;">
+        <a style=" margin: 0 1rem;"
+          href="https://www.google.com/maps/uv?pb=!1s0x479b1f5088ab10a1%3A0xb96230db6b2aea78!3m1!7e131!5sTLMT%20Studio!15sCgIgAQ&hl=de-CH&imagekey=!1e10!2sAF1QipOccVjKV8fuZm1Vt6klOzxTMbN6560uhpdfjzEC">Mehr
+          Photos
+        </a>
+        <hr />
+        <div id="pricing">
+          <div class="title-row">
+            <h1 class="title">Pricing</h1>
+          </div>
+
+          <div class="pricing-content">
+            <div style="width:420px">
+              <h3>
+                Packages
+                <span style="font-size: .8rem;">(Drums, Bass, Guitar, Vocals)</span>
+              </h3>
+              <div class="price-element">
+                <label>Demo (3 songs / 2 Tage)</label>
+                <span>CHF 1'500.-</span>
+              </div>
+              <div class="price-element">
+                <label>EP (5 songs / 4 Tage)</label>
+                <span>CHF 2'500.-</span>
+              </div>
+              <div class="price-element">
+                <label>Album (9 songs / 8 Tage)</label>
+                <span>CHF 4'200.-</span>
+              </div>
+
+              <h3>
+                Studio für Recording
+                <span style="font-size: .8rem;">(inkl. Techniker)</span>
+              </h3>
+              <div class="price-element">
+                <label>1 Tag</label>
+                <span>CHF 420.-</span>
+              </div>
+              <div class="price-element">
+                <label>ab 5 Tage</label>
+                <span>10% Rabatt</span>
+              </div>
+              <div class="price-element">
+                <label>ab 10 Tage</label>
+                <span>20% Rabatt</span>
+              </div>
+              <h3>Mixing</h3>
+              <div class="price-element">
+                <label>bis 16 Spuren</label>
+                <span>CHF 180.-</span>
+              </div>
+              <div class="price-element">
+                <label>bis 48 Spuren</label>
+                <span>CHF 220.-</span>
+              </div>
+              <div class="price-element">
+                <label>ab 4 Songs</label>
+                <span>10% Rabatt</span>
+              </div>
+              <div class="price-element">
+                <label>ab 8 Songs</label>
+                <span>20% Rabatt</span>
+              </div>
+              <div class="price-element">
+                <span style="font-size:.8rem">
+                  Der Preis beinhaltet zwei Revisionen mit Änderungswünschen.
+                </span>
+              </div>
+              <div class="price-element">
+                <label>&nbsp;</label>
+              </div>
+              <h3>Mastering (extern)</h3>
+              <div class="price-element">
+                <label>Stereo</label>
+                <span>CHF 80.-</span>
+              </div>
+              <div class="price-element">
+                <label>Stem Mastering</label>
+                <span>CHF 160.-</span>
+              </div>
+              <div class="price-element">
+                <label>ab 4 Songs</label>
+                <span>10% Rabatt</span>
+              </div>
+              <div class="price-element">
+                <label>&nbsp;</label>
+              </div>
+              <h3>
+                Distribution
+                <span style="font-size: .8rem;">(Spotify, Instagram, iTunes, YouTube, etc.)</span>
+              </h3>
+              <div class="price-element">
+                <label>Jahres Abo (unlimitierte Releases)</label>
+                <span>CHF 15.-</span>
+              </div>
+              <div class="price-element">
+                <label>Einzelne Single</label>
+                <span>CHF 10.-</span>
+              </div>
+              <div class="price-element">
+                <label>Einzelnes Album</label>
+                <span>CHF 25.-</span>
+              </div>
+              <div class="price-element">
+                <label>&nbsp;</label>
+              </div>
+              <div class="price-element">
+                <span style="font-size:.8rem">
+                  Die Streaming Einnahmen gehen zu 100% an dich, wir behalten nichts.
+                </span>
+              </div>
+              <h3>
+                CD Pressung
+                <span style="font-size: .8rem;">(ab 100stk.)</span>
+              </h3>
+              <div class="price-element">
+                <label>Kartonsteckstasche</label>
+                <span>circa CHF 330.-</span>
+              </div>
+              <div class="price-element">
+                <label>Digi Sleeve</label>
+                <span>circa CHF 430.-</span>
+              </div>
+              <div class="price-element">
+                <label>Jewelbox</label>
+                <span>circa CHF 430.-</span>
+              </div>
+              <div class="price-element">
+                <label>&nbsp;</label>
+              </div>
+              <div class="price-element">
+                <span style="font-size:.8rem">
+                  Verbindliche Preisangebote zur CD Pressung auf Anfrage.
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <div id="contact">
+          <div class="title-row">
+            <h1 class="title">Contact</h1>
+          </div>
+
+          <div class="contact-content" style="margin: 0 auto; padding:4rem; text-align: left;">
+            <div class="left" >
+<h3>Kontaktdaten</h3>
+              <strong>Joshua Wirth</strong>
+              <p>TLMT Studio</p>
+
+              <p>Telefon: <a href="tel:0041792768141">+41 79 276 81 41</a></br>
+                E-Mail: studio@tlmt.ch</p>
+
+            </div>
+
+            <div class="right">
+              <div>
+
+                <h3>Anreise</h3>
+                <a href="./resource/directions.png" target="_blank">
+                  <img src="./resource/directions.png" style="width: 50%;" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+</body>
+<script>
+  function selectPage(selectedPage) {
+    pages = ['studio', 'photos', 'pricing', 'contact'];
+    // pages.forEach(page => {
+    //   var element = document.getElementById(page);
+    //   element.hidden = !(page == selectedPage);
+    // });
+  }
+
+
+  var slideIndex = 1;
+
+  function nextImage(n) {
+    selectImage(slideIndex += n);
+  }
+
+  function selectImage(index) {
+    var slides = document.getElementsByClassName("slides");
+    if (index > slides.length) {
+      slideIndex = 1
+    }
+    if (index < 1) {
+      slideIndex = slides.length
+    };
+
+    for (var i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    slides[slideIndex - 1].style.display = "inline";
+  }
+
+
+  selectImage(1);
+  selectPage('studio');
+
+</script>
+
+</html>
