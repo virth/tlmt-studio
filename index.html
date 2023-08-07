@@ -34,9 +34,8 @@
 
     <div class="bg-studio bg-contain bg-no-repeat h-full text-white p-8 bg-cover flex flex-col justify-between">
       <nav class="z-40 flex justify-between text-3xl font-bold">
-        <div class="text-center">
+        <div class="text-center hidden md:block">
           <h1>TLMT Studio</h1>
-          <!-- <p class="text-m">Music Recording and Mixing</p> -->
         </div>
         <ul class="flex gap-16">
           <li class="menu-element"><a href="#studio">Studio</a></li>
@@ -44,13 +43,13 @@
           <li class="menu-element"><a href="#contact">Anfahrt</a></li>
         </ul>
         <a href="https://api.whatsapp.com/send/?phone=0041792768141&text=Hallo+Josh.+Ich+will+eine+Studio+Session+anfragen&type=phone_number&app_absent=0"
-          class="border border-white rounded-xl p-4 text-lg" target="_blank">
+          class="hidden md:block border border-white rounded-xl p-4 text-lg" target="_blank">
           Jetzt Kontaktieren
         </a>
       </nav>
 
 
-      <div class="grid grid-cols-2 lg:grid-cols-3 gap-16 text-xl text-center max-w-screen-2xl mx-auto text-black">
+      <div class="grid grid-cols-2 lg:grid-cols-3 gap-16 text-sm md:text-xl text-center max-w-screen-2xl mx-auto text-black">
         <div
           class="m-2 bg-fuchsia-300 bg-opacity-90 bg-blend-multiply rounded-xl text-center p-8 flex flex-col justify-between gap-8">
           <div>
@@ -296,13 +295,9 @@
 
   <div class="mt-24 bg-black">
     <div class="container max-w-screen-xl text-white mx-auto p-12" id="contact">
-      <div class="grid grid-cols-3 gap-16 mx-auto">
-        <div>
-          <h3 class="font-extralight">Rechnungs Adresse</h3>
-          <p>TLMT Studio – Josh Wirth</p>
-          <p>Lilienstrasse 53</p>
-          <p>9000 St.Gallen</p>
-        </div>
+      <div class="grid grid-cols-2 lg:grid-cols-3 gap-16 mx-auto">
+
+        
 
         <div>
           <h3 class="font-extralight">Kontakt</h3>
@@ -318,15 +313,7 @@
           </a>
         </div>
 
-        <div>
-          <h3 class="font-extralight">Studio Adresse</h3>
-          <p>Wildensteinstrasse 7</p>
-          <p>9404 Rorschacherberg</p>
-          <a class="underline"
-            href="https://www.google.com/maps/dir//TLMT+Studio/data=!4m8!4m7!1m0!1m5!1m1!1s0x479b1f5088ab10a1:0xb96230db6b2aea78!2m2!1d9.4891959!2d47.4666767">Route
-            Anzeigen</a>
 
-        </div>
 
         <div>
           <h3 class="font-extralight">Social Media</h3>
@@ -334,6 +321,23 @@
             <a href="https://linktr.ee/tlmt_studio" target="_blank" class="underline">Spotify</p>
               <a href="https://goo.gl/maps/rkzj11Ji5gRBsWFv5" target="_blank" class="underline">Google Maps</p>
         </div>
+
+        <div>
+          <h3 class="font-extralight">Rechnungs Adresse</h3>
+          <p>TLMT Studio – Josh Wirth</p>
+          <p>Lilienstrasse 53</p>
+          <p>9000 St.Gallen</p>
+        </div>
+
+        <div>
+          <h3 class="font-extralight">Studio Adresse</h3>
+          <p>Wildensteinstrasse 7</p>
+          <p>9404 Rorschacherberg</p>
+          <a class="underline"
+            href="https://www.google.com/maps/dir//TLMT+Studio/data=!4m8!4m7!1m0!1m5!1m1!1s0x479b1f5088ab10a1:0xb96230db6b2aea78!2m2!1d9.4891959!2d47.4666767">Route
+            Anzeigen</a>
+        </div>
+
       </div>
     </div>
   </div>
