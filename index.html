@@ -2,6 +2,9 @@
 
 <head>
   <script defer data-domain="studio.tlmt.ch" src="https://plausible.io/js/plausible.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+
   <script src="https://cdn.tailwindcss.com"></script>
 
   <script>
@@ -13,6 +16,443 @@
           }
         }
       }
+    }
+
+    function testimonials() {
+      return [
+        {
+          name: "Walter Bortoletto",
+          text: "Technisches Knowhow, Flexibilität, faire Preisgestaltung, kreative Mitarbeit und die Zuverlässigkeit zeichnen Josh aus und sind mehr als empfehlenswert. Er kennt keine Probleme, sondern nur Lösungen.",
+          imageSrc: "resource/portrait-walo.png"
+        },
+        {
+          name: "Han Beyli",
+          text: "Absolutely loved working with Josh at his studio. Very professional and straight to the point!",
+          imageSrc: "resource/portrait-han.jpeg"
+        },
+        {
+          name: "Biagio Anania",
+          text: "Klein aber fein. Persönliche und familiäre Atmosphäre. Top Service. Sehr empfehlenswert.",
+          imageSrc: "resource/portrait-biagio.jpeg"
+        },
+      ];
+    }
+
+    function rooms() {
+      return [
+        {
+          name: "Recording Room A (35m2)",
+          imageSrc: "resource/studio_room_a.jpg",
+          text: "Der Aufnahmeraum mit Live Charakter. Mit den 38 installierten Diffusoren ideal für Drums und Chöre.",
+          connection: "Sichtverbindung in Aufnahmeraum B.",
+        },
+        {
+          name: "Recording Room B (15m2)",
+          imageSrc: "resource/studio_room_b.jpg",
+          text: "Für Gesangs- und Sprachaufnahmen, Instrumental-Overdubs und Lautes, das nicht stören soll",
+          connection: "Sichtverbindung in Aufnahmeraum A und in den Regieraum.",
+        },
+        {
+          name: "Control Room (21m2)",
+          imageSrc: "resource/studio_control_room.jpg",
+          text: "Akustisch optimiert mit vier Abhörsystemen. Hier fliessen alle Signale zusammen.",
+          connection: "Sichtverbindung in Aufnahmeraum B.",
+        },
+      ];
+    }
+
+    function priceGroups() {
+      return [
+        {
+          "title": "Mixing",
+          "description": "Inklusive zwei Revisionen mit Änderungswünschen.",
+          "rates": [
+            {
+              "label": "bis 16 Spuren",
+              "price": "CHF 180.-"
+            },
+            {
+              "label": "bis 48 Spuren",
+              "price": "CHF 220.-"
+            },
+            {
+              "label": "ab 4 Songs",
+              "price": "10% Rabatt"
+            }
+          ]
+        },
+        {
+          "title": "Mastering",
+          "description": "Inklusive zwei Revisionen mit Änderungswünschen.",
+          "rates": [
+            {
+              "label": "Stereo",
+              "price": "CHF 80.-"
+            },
+            {
+              "label": "Stem Mastering",
+              "price": "CHF 160.-"
+            },
+            {
+              "label": "ab 4 Songs",
+              "price": "10% Rabatt"
+            }
+          ]
+        },
+        {
+          "title": "Streaming Distribution",
+          "description": "Spotify, Apple Music und Co. Die Streaming Einnahmen gehen zu 100% an dich, wir behalten nichts.",
+          "rates": [
+            {
+              "label": "Jahresgebühr",
+              "price": "CHF 30.-"
+            },
+            {
+              "label": "Upload pro Single",
+              "price": "CHF 25.-"
+            },
+            {
+              "label": "Upload pro Album",
+              "price": "CHF 55.-"
+            }
+          ]
+        },
+        {
+          "title": "CD Pressung",
+          "description": "Mindestbestellmenge 100stk. Verbindliche Preisangebote zur CD Pressung auf Anfrage.",
+          "rates": [
+            {
+              "label": "Kartonsteckstasche",
+              "price": "circa CHF 350.-"
+            },
+            {
+              "label": "Digi Sleeve",
+              "price": "circa CHF 450.-"
+            },
+            {
+              "label": "Jewelbox",
+              "price": "circa CHF 450.-"
+            }
+          ]
+        },
+        {
+          "title": "Rockband Package",
+          "description": "Drums, Bass, Guitar, Vocals",
+          "rates": [
+            {
+              "label": "Demo (3 songs / 2 Tage)",
+              "price": "CHF 1'900.-"
+            },
+            {
+              "label": "EP (5 songs / 4 Tage)",
+              "price": "CHF 2'900.-"
+            },
+            {
+              "label": "Album (9 songs / 8 Tage)",
+              "price": "CHF 4'400.-"
+            }
+          ]
+        }
+      ];
+    }
+
+    function artists() {
+      return [
+
+        {
+          name: "Rock/Metal",
+          artists: [
+
+            {
+              name: "Pilots of the Daydreams",
+              genre: "Rock",
+              description: "Recording, Editing und Preproduction vom Album «Angels Are Real» (2021) und zwei Singels «That's What We Are» und «Lost Brotherhood» (2020)",
+              links: [
+                {
+                  label: "Angels Are Real (2021)",
+                  href: "https://open.spotify.com/album/2qlKN1CLaGVYFktbnpx7Xd?si=dHU_8Rs_ST-eh4gb7Y-IyA"
+                },
+                {
+                  label: "Lost Brotherhood (2020)",
+                  href: "https://open.spotify.com/album/4iXZGUXF5Ja7yYiy8jTKQn?si=rtmDGmSHR7apnUQALYm6fg",
+                },
+                {
+                  label: "That's What We Are (2020)",
+                  href: "https://open.spotify.com/album/5e0EPhu4hymjweatQm64Jq?si=PpVSkmlWSJ2qaEZ8bs8yZg",
+                }
+              ],
+              tags: [
+                "Recording",
+                "Preproduction",
+                "Editing"
+              ]
+            },
+            {
+              name: "TLMT",
+              genre: "Rock",
+              description: "Musikbegeisterte Rockfans wissen es genau: bei einem echten Rockkonzert steht die Zeit still, alles ist möglich. Bodenständiger Hardrock, gepaart kraftvollem Gesang und Melodien die an bessere Zeiten erinnern.",
+              links: [
+                {
+                  label: "Born to Lose (Album 2020)",
+                  href: "https://open.spotify.com/album/17AGJzkVY1PQpvTkLonmeo?si=357bbf7436cc4584"
+                },
+                {
+                  label: "No Way (Single 2021)",
+                  href: "https://open.spotify.com/track/3skDbFaGYrTJlQBh4G2zPe?si=6b919452ad7842b6",
+                },
+                {
+                  label: "Don't let me Go (Single 2021)",
+                  href: "https://open.spotify.com/track/7aGrdu9mdgfkJeLFKFhvcr?si=7329aa9cbbe54eb7",
+                }
+              ],
+              tags: [
+                "Recording",
+                "Preproduction",
+                "Editing",
+                "Mixing",
+                "Mastering"
+              ]
+            },
+            {
+              name: "Obsidian Black",
+              genre: "Heavy Metal",
+              description: "Metal aus der Schweiz. Classic Metal geformt aus Emotionen, gehärtet durch Lebenserfahrung, veredelt mit Leidenschaft. Jetzt ist ihr zweiter Streich da: Die 5-Track EP «Judgement Day»",
+              links: [
+                {
+                  label: "Judgement Day (2022)",
+                  href: "https://open.spotify.com/album/36k3xssVGHrmn0PUiojSKH?si=ZBp35T5eR_iMazgBMZKmRA"
+                },
+              ],
+              tags: [
+                "Recording",
+                "Preproduction",
+                "Editing",
+                "Mixing",
+                "Mastering"
+              ]
+            },
+            {
+              name: "Red Eyes",
+              description: "Zwei Mal in Folge dritter Platz am BandXOst. Echter Metal aus Amriswil. Eine Demo Produktion mit drei Songs.",
+              genre: "Metal",
+              tags: [
+                "Recording",
+                "Preproduction",
+                "Editing",
+                "Mixing",
+                "Mastering"
+              ]
+            },
+            {
+              name: "The Green Elephants",
+              genre: "Rock",
+              description: "Green Elephants (heute «No More Honey») ist eine 2008 gegründete Alternative-, Progressive- Rock/Metalband aus dem Domleschg (GR).",
+              tags: [
+                "Recording",
+                "Preproduction",
+                "Editing",
+                "Mixing",
+                "Mastering"
+              ]
+            },
+          ]
+        },
+        {
+          name: 'Jazz/Funk',
+          artists: [
+            {
+              name: "Dejàn",
+              genre: "World Jazz",
+              description: "Aus New York. Eine Soul-Familie des World Jazz. Die ethnischen Rhythmen der Gruppe, die starken lateinamerikanischen Wurzeln und die Improvisationen aus dem Nahen Osten nehmen das Publikum mit auf eine musikalische Reise um die Welt.",
+              links: [
+                {
+                  label: "Fever (live recording, 2018)",
+                  href: "https://www.youtube.com/watch?v=pSifboauTMw"
+                },
+                {
+                  label: "Dejàn (2020)",
+                  href: "https://www.youtube.com/watch?v=ACKSDcb1Hek"
+                },
+              ],
+              tags: [
+                "Recording",
+                "Live"
+              ]
+            },
+            {
+              name: "Superjam",
+              genre: "Funk",
+              description: "Superjam (heute Tonic Vibes). Erfrischend, spannend und voller Energie. Treibende Grooves, funky Riffs, sphärische Klänge und eine mitreissende Stimme geben der St. Galler Band ihr unverkennbares Markenzeichen.",
+              tags: [
+                "Recording",
+                "Editing",
+                "Mixing",
+                "Mastering",
+              ]
+            },
+            {
+              name: "Levin Foxx",
+              genre: "Funk",
+              description: "Rock-soul-Groove aus der Schweiz.",
+              links: [
+                {
+                  label: "Itchy Feet",
+                  href: "https://mx3.ch/levinfoxx"
+                },
+              ],
+              tags: [
+                "Recording",
+                "Editing",
+                "Mixing",
+                "Mastering",
+              ]
+            },
+          ]
+        },
+        {
+          name: 'Klassik/Orchester',
+          artists: [
+            {
+              name: "Ulrich Zeitler",
+              genre: "Klassik/Lyrik",
+              description: "Der Gedichtzyklus «novembrig» der Schweizer Lyrikerin Elsbeth Maag beschreibt das Natürliche des Sterbens und des Todes als selbstverständliches Stadium im immerwährenden Prozess von Werden und Vergehen.",
+              links: [
+                {
+                  label: "Novembrig (2023)",
+                  href: "https://novembrig.ch/"
+                },
+              ],
+              tags: [
+                "Recording",
+                "Editing",
+                "Preproduction",
+                "Mixing",
+                "Mastering",
+              ]
+            },
+            {
+              name: "Francisco Obieta",
+              genre: "Klassik/Orchester Oratorium",
+              description: "Live Aufnahme der Weltpremiere einer Komposition von Francisco Obieta. Ein Jan Hus Oratorium, über Texte von Ivo Ledergerber.",
+              links: [
+                {
+                  label: "Verbrennt das Feuer – Weltpremiere Münster Konstanz (2015)",
+                  href: "http://obieta.ch/wp-content/uploads/2021/08/verbrennt-das-feuer-new-mix.mp3"
+                },
+              ],
+              tags: [
+                "Live",
+                "Mixing",
+                "Mastering",
+              ]
+            },
+          ]
+        },
+        {
+          name: 'Rock/Blues',
+          artists: [
+            {
+              name: "Publish or Perish",
+              genre: "Rock/Blues",
+              description: "Publish or Perish steht für Rock mit geballten bluesigen Riffs, einem spoon Funk, psychedelic Flavour und einer Prise Melancholie. Ursprünglich stammt die Delikatesse aus der Ostschweiz St. Gallen und nun soll die ganze Welt auf den Geschmack dieser im Keller gemixten Erfrischung kommen. ",
+              links: [
+                {
+                  label: "Life and Thoughtless Echoes (2021)",
+                  href: "https://open.spotify.com/intl-de/album/23UBKkyncsaCMhqXX9xIaC?si=Bk1pFvGHRTGbNatQdJVFhg"
+                },
+              ],
+              tags: [
+                "Recording",
+              ]
+            },
+            {
+              name: "Axa Winterthur",
+              genre: "Pop/Rock",
+              description: "Eine Pop/Rock Produktion für eine Marketing Kampagne der Axa Winterthur Versicherung. Geschrieben und Produziert von Walter Bortolleto. Mit Biagio Anania am Schlagzeug, Mark Widmer an der Gitarre, Walter Bortolleto am Bass und Red Cube Sänger Thomas Straumann.",
+              tags: [
+                "Recording",
+                "Editing",
+                "Preproduction",
+                "Mixing",
+                "Mastering",
+              ]
+            },
+            {
+              name: "Horny Roosters",
+              genre: "Rock-Blues-Umtata",
+              links: [
+                {
+                  label: "Hold On – Behind the Scenes (2022)",
+                  href: "https://www.youtube.com/watch?v=o6Lp7X0wgZI"
+                },
+                {
+                  label: "Hit The Seven Nation Jack – Cover (2022)",
+                  href: "https://www.youtube.com/watch?v=o6Lp7X0wgZI"
+                },
+                {
+                  label: "One Horny Night (Album 2021)",
+                  href: "https://open.spotify.com/album/18bwJfflw2UmCAFLsHgWyj?si=pn_VmMjQR9OmDHzIVlUtBg"
+                },
+              ],
+              tags: [
+                "Recording",
+                "Editing",
+                "Preproduction",
+                "Mixing",
+                "Mastering",
+              ]
+            },
+          ]
+        },
+        {
+          name: 'Singer/Songwritter, Covers und Pop',
+          artists: [
+            {
+              name: "Belinda del Porto",
+              genre: "Singer/Songwriter",
+              description: "Eine Aufnahme vom Liveset von Belinda mit ihrer Band für die Ausarbeitung der Produktion der Livetour.",
+              tags: [
+                "Recording",
+                "Editing",
+                "Mixing",
+              ]
+            },
+            {
+              name: "Acoustic 4",
+              genre: "Unplugged Pop/Rock",
+              description: "Musik in ihrer schönsten Form. Unplugged. Produktion einer Aufnahme der Liveshow am Summerdays Festival in Arbon.",
+              tags: [
+                "Live",
+                "Editing",
+                "Mixing",
+                "Mastering",
+              ]
+            },
+            {
+              name: "Maj7",
+              genre: "Pop",
+              description: "Vier Frauen, vier Stimmen, Drums, Gitarre, Bass und Violine.",
+              tags: [
+                "Recording",
+                "Editing",
+                "Mixing",
+                "Mastering",
+              ]
+            },
+            {
+              name: "30 Miles Ago",
+              genre: "Pop/Rock Covers",
+              description: "Eine Demo Produktion mit 5 Songs für die talentierte junge Band aus Graubünden.",
+              tags: [
+                "Recording",
+                "Editing",
+                "Mixing",
+                "Mastering",
+              ]
+            },
+          ]
+        }
+      ];
     }
   </script>
 
@@ -47,41 +487,18 @@
       </nav>
 
 
-      <div class="grid grid-cols-1 lg:grid-cols-3 gap-16 text-sm md:text-xl text-center max-w-screen-2xl mx-auto text-black">
-        <div
-          class="m-2 bg-fuchsia-300 bg-opacity-90 bg-blend-multiply rounded-xl text-center p-8 flex flex-col justify-between gap-8">
-          <div>
-            <img src="resource/portrait-walo.png" class="rounded-full w-40 mx-auto mb-8" />
-            <p>
-              Technisches Knowhow,
-              Flexibilität, faire Preisgestaltung, kreative Mitarbeit und die Zuverlässigkeit zeichnen Josh aus
-              und sind mehr als
-              empfehlenswert. Er kennt keine Probleme, sondern nur Lösungen.
-            </p>
-
+      <div x-data="testimonials()"
+        class="h-7/8 overflow-scroll grid grid-cols-1 lg:grid-cols-3 gap-16 text-sm md:text-xl text-center max-w-screen-2xl mx-auto text-black">
+        <template x-for="testimonial in testimonials">
+          <div
+            class="m-2 bg-fuchsia-300 bg-opacity-90 bg-blend-multiply rounded-xl text-center p-8 flex flex-col justify-between gap-8">
+            <div>
+              <img :src="testimonial.imageSrc" class="rounded-full w-40 mx-auto mb-8" />
+              <p x-text="testimonial.text"></p>
+            </div>
+            <p class="text-md" x-text="testimonial.name"></p>
           </div>
-          <p class="text-md">Walter Bortolleto</p>
-        </div>
-
-        <div class="m-2 bg-fuchsia-300 bg-opacity-90 rounded-xl text-center p-8 flex flex-col justify-between gap-8">
-          <div>
-            <img src="resource/portrait-han.jpeg" class="rounded-full w-40 mx-auto mb-8" />
-            <p>
-              Absolutely loved working with Josh at his studio. Very professional and straight to the point!
-            </p>
-          </div>
-          <p class="text-md">Han Beyli</p>
-        </div>
-
-        <div class="hidden md:block m-2 bg-fuchsia-300 bg-opacity-90 rounded-xl text-center p-8 flex flex-col justify-between gap-8">
-          <div>
-            <img src="resource/portrait-biagio.jpeg" class="rounded-full w-40 mx-auto mb-8" />
-            <p>
-              Klein aber fein. Persönliche und familiäre Atmosphäre. Top Service. Sehr empfehlenswert.
-            </p>
-          </div>
-          <p class="text-md">Biagio Anania</p>
-        </div>
+        </template>
       </div>
 
       <div class="text-center z-40">
@@ -99,195 +516,130 @@
       class="absolute bottom-0 flex h-64 w-screen items-end justify-center bg-gradient-to-b from-transparent to-black to-80%">
     </div>
   </div>
-  <div class="px-8 container max-w-screen-xl mx-auto">
-
-
-    <div class="py-12" id="studio">
-      <h1 class="text-3xl my-12">Studio</h1>
-      <div class="grid grid-cols-1 lg:grid-cols-3 gap-16 text-center">
+  <div class="container max-w-screen-xl mx-auto py-12 px-8 text-left" id="studio">
+    <h1 class="text-3xl my-12">Studio</h1>
+    <div x-data="rooms()" class="grid grid-cols-1 lg:grid-cols-3 gap-16 text-center">
+      <template x-for="room in rooms">
         <div class="rounded-xl bg-fuchsia-300 flex flex-col gap-8">
-          <img class="rounded-t-xl" src="./resource/studio_room_a.jpg" />
+          <img class="rounded-t-xl" :src="room.imageSrc" />
           <div>
-            <h2 class="text-xl">Recording Room A (35m<sup>2</sup>)</h2>
+            <h2 class="text-xl" x-text="room.name"></h2>
             <ul class="p-4 gap-4 space-y-4">
-              <li>Der Aufnahmeraum mit Live Charakter. Mit den 38 installierten Diffusoren ideal für Drums und Chöre.
-              </li>
-              <li>Sichtverbindung in Aufnahmeraum B.</li>
+              <li x-text="room.text" />
+              <li x-text="room.connection" />
             </ul>
           </div>
         </div>
-
-        <div class="rounded-xl bg-fuchsia-300 flex flex-col gap-8">
-          <img class="rounded-t-xl" src="./resource/studio_room_b.jpg" />
-          <div>
-            <h2 class="text-xl">Recording Room B (15m<sup>2</sup>)</h2>
-            <ul class="p-4 gap-4 space-y-4">
-              <li>
-                Für Gesangs- und Sprachaufnahmen, Instrumental-Overdubs und Lautes, das nicht stören soll
-              </li>
-              <li>Sichtverbindung in Aufnahmeraum A und in den Regieraum.</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="rounded-xl bg-fuchsia-300 flex flex-col gap-8">
-          <img class="rounded-t-xl" src="./resource/studio_control_room.jpg" />
-          <div>
-            <h2 class="text-xl">Control Room (21m<sup>2</sup>)</h2>
-            <ul class="p-4 gap-4 space-y-4">
-              <li>
-                Akustisch optimiert mit vier Abhörsystemen. Hier fliessen alle Signale zusammen.
-              </li>
-              <li>Sichtverbindung in Aufnahmeraum B.</li>
-            </ul>
-          </div>
-        </div>
-      </div>
+      </template>
     </div>
+  </div>
 
 
-    <hr />
+  <hr />
 
 
-    <div class="py-12" id="photos">
-      <h1 class="text-3xl my-12">Photos</h1>
+  <div class="container max-w-screen-xl mx-auto py-12 px-8 text-left" id="photos">
+    <h1 class="text-3xl my-12">Photos</h1>
 
-      <div class="grid grid-cols-[1fr,6fr,1fr] items-center mx-auto">
-        <i onClick="nextImage(-1)" class="material-icons hover:cursor-pointer text-3xl">arrow_backwards</i>
-        <div class="bg-fuchsia-500">
-          <img class="slides" src="./resource/studio_007.jpg" />
-          <img class="slides" src="./resource/studio_room_a.jpg" />
-          <img class="slides" src="./resource/studio_001.jpg" />
-          <img class="slides" src="./resource/studio_room_b.jpg" />
-          <img class="slides" src="./resource/studio_control_room.jpg" />
-          <img class="slides" src="./resource/studio_004.jpg" />
-          <img class="slides" src="./resource/studio_005.jpg" />
-          <img class="slides" src="./resource/studio_002.jpg" />
-          <img class="slides" src="./resource/studio_008.jpg" />
-          <img class="slides" src="./resource/studio_006.jpg" />
-          <img class="slides" src="./resource/studio_003.jpg" />
-        </div>
-        <i onClick="nextImage(1)" class="material-icons hover:cursor-pointer text-3xl">arrow_forwards</i>
+    <div class="grid grid-cols-[1fr,6fr,1fr] items-center mx-auto">
+      <i onClick="nextImage(-1)" class="material-icons hover:cursor-pointer text-3xl">arrow_backwards</i>
+      <div class="bg-fuchsia-500">
+        <img class="slides" src="./resource/studio_007.jpg" />
+        <img class="slides" src="./resource/studio_room_a.jpg" />
+        <img class="slides" src="./resource/studio_001.jpg" />
+        <img class="slides" src="./resource/studio_room_b.jpg" />
+        <img class="slides" src="./resource/studio_control_room.jpg" />
+        <img class="slides" src="./resource/studio_004.jpg" />
+        <img class="slides" src="./resource/studio_005.jpg" />
+        <img class="slides" src="./resource/studio_002.jpg" />
+        <img class="slides" src="./resource/studio_008.jpg" />
+        <img class="slides" src="./resource/studio_006.jpg" />
+        <img class="slides" src="./resource/studio_003.jpg" />
       </div>
-      <div class="mt-8">
-        <a class="underline"
-          href="https://www.google.com/maps/uv?pb=!1s0x479b1f5088ab10a1%3A0xb96230db6b2aea78!3m1!7e131!5sTLMT%20Studio!15sCgIgAQ&hl=de-CH&imagekey=!1e10!2sAF1QipOccVjKV8fuZm1Vt6klOzxTMbN6560uhpdfjzEC">
-          Mehr Photos
-        </a>
-      </div>
+      <i onClick="nextImage(1)" class="material-icons hover:cursor-pointer text-3xl">arrow_forwards</i>
     </div>
+    <div class="mt-8">
+      <a class="underline"
+        href="https://www.google.com/maps/uv?pb=!1s0x479b1f5088ab10a1%3A0xb96230db6b2aea78!3m1!7e131!5sTLMT%20Studio!15sCgIgAQ&hl=de-CH&imagekey=!1e10!2sAF1QipOccVjKV8fuZm1Vt6klOzxTMbN6560uhpdfjzEC">
+        Mehr Photos
+      </a>
+    </div>
+  </div>
 
 
+  <hr />
 
-    <hr />
-
-
-    <div class="py-12 text-left" id="pricing">
+  <div class="bg-fuchsia-300">
+    <div class="container max-w-screen-xl mx-auto py-12 px-8 text-left" id="pricing">
       <h1 class="text-3xl my-12">Pricing</h1>
-
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
-
-        <div class="grid grid-cols-[1fr,auto] rounded-xl bg-fuchsia-300 p-8">
-          <div class="col-span-2 mb-4">
-            <h3 class="text-2xl font-bold">Recording</h3>
-            <span style="font-size: .8rem;">Studiomiete inklusive Techniker</span>
-          </div>
-
-          <label>Preis pro Stunde</label>
-          <span>CHF 75.-</span>
-          <label>Preis pro Tag</label>
-          <span>CHF 580.-</span>
-          <label>Preis pro Woche</label>
-          <span>CHF 2'700.-</span>
-        </div>
-
-
-        <div class="grid grid-cols-[1fr,auto] rounded-xl bg-fuchsia-300 p-8">
-          <div class="col-span-2 mb-4">
-            <h3 class="text-2xl font-bold">Mixing</h3>
-            <span style="font-size:.8rem">
-              Inklusive zwei Revisionen mit Änderungswünschen.
-            </span>
-          </div>
-          <label>bis 16 Spuren</label>
-          <span>CHF 180.-</span>
-          <label>bis 48 Spuren</label>
-          <span>CHF 220.-</span>
-          <label>ab 4 Songs</label>
-          <span>10% Rabatt</span>
-        </div>
-
-
-
-        <div class="grid grid-cols-[1fr,auto] rounded-xl bg-fuchsia-300 p-8">
-          <div class="col-span-2 mb-4">
-            <h3 class="text-2xl font-bold">Mastering</h3>
-            <span style="font-size:.8rem">
-              Inklusive zwei Revisionen mit Änderungswünschen.
-            </span>
-          </div>
-          <label>Stereo</label>
-          <span>CHF 80.-</span>
-          <label>Stem Mastering</label>
-          <span>CHF 160.-</span>
-          <label>ab 4 Songs</label>
-          <span>10% Rabatt</span>
-        </div>
-
-
-        <div class="grid grid-cols-[1fr,auto] rounded-xl bg-fuchsia-300 p-8">
-          <div class="col-span-2 mb-4">
-            <h3 class="text-2xl font-bold">
-              Streaming Distribution
-            </h3>
-            <p style="font-size: .8rem;">Spotify, Apple Music und Co. Die Streaming Einnahmen gehen zu 100% an dich, wir
-              behalten nichts.
-            </p>
-          </div>
-
-          <label>Jahresgebühr</label>
-          <span>CHF 30.-</span>
-          <label>Upload pro Single</label>
-          <span>CHF 25.-</span>
-          <label>Upload pro Album</label>
-          <span>CHF 55.-</span>
-        </div>
-
-        <div class="grid grid-cols-[1fr,auto] rounded-xl bg-fuchsia-300 p-8">
-          <div class="col-span-2 mb-4">
-            <h3 class="text-2xl font-bold">
-              CD Pressung
-            </h3>
-            <p style="font-size: .8rem;">Mindestbestellmenge 100stk. Verbindliche Preisangebote zur CD Pressung auf
-              Anfrage.
-            </p>
-          </div>
-
-          <label>Kartonsteckstasche</label>
-          <span>circa CHF 350.-</span>
-          <label>Digi Sleeve</label>
-          <span>circa CHF 450.-</span>
-          <label>Jewelbox</label>
-          <span>circa CHF 450.-</span>
-          <div class="col-span-2 mb-4">
-          </div>
-        </div>
-
-        <div class="grid grid-cols-[1fr,auto] rounded-xl bg-fuchsia-300 p-8">
-          <div class="col-span-2 mb-4">
-            <h3 class="text-2xl font-bold">Rockband Package</h3>
-            <span style="font-size: .8rem;">Drums, Bass, Guitar, Vocals</span>
-          </div>
-
-          <label>Demo (3 songs / 2 Tage)</label>
-          <span>CHF 1'900.-</span>
-          <label>EP (5 songs / 4 Tage)</label>
-          <span>CHF 2'900.-</span>
-          <label>Album (9 songs / 8 Tage)</label>
-          <span>CHF 4'400.-</span>
+      <div x-data="priceGroups()">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+          <template x-for="priceGroup in priceGroups">
+            <div class="rounded-xl bg-white p-8">
+              <div class="mb-4">
+                <h3 class="text-2xl font-bold" x-text="priceGroup.title"></h3>
+                <span style="font-size: .8rem;" x-text="priceGroup.description"></span>
+              </div>
+              <template x-for="rate in priceGroup.rates">
+                <div class="grid grid-cols-[1fr,auto]">
+                  <span x-text="rate.price"></span>
+                  <label x-text="rate.label"></label>
+                </div>
+              </template>
+            </div>
+          </template>
         </div>
       </div>
     </div>
+  </div>
+
+
+  <hr />
+
+
+  <div class="container max-w-screen-xl mx-auto py-12 px-8 text-left" id="artists">
+    <h1 class="text-3xl my-12">Artists and Clients</h1>
+
+    <div x-data="artists()">
+      <template x-for="group in artists">
+        <div class="my-24">
+          <h3 class="my-4" x-text="group.name"></h3>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <template x-for="artist in group.artists">
+              <div class="p-4 border-2 border-fuchsia-300 rounded-xl grid grid-rows-[auto,1fr,auto,auto]">
+                <div>
+                  <h3 class="text-2xl" x-text="artist.name"></h3>
+                  <label>Genre: </label><span x-text="artist.genre"></span>
+                </div>
+                <p class="my-4" x-text="artist.description"></p>
+                <div>
+                  <template x-if="artist.links.length > 0">
+                    <ul class="my-4 list-disc list-inside">
+                      <h4>Releases:</h4>
+                      <template x-for="link in artist.links">
+                        <li>
+                          <label></label><a class="underline" x-text="link.label" :href="link.href" target="_blank"></a>
+                        </li>
+                      </template>
+                    </ul>
+                  </template>
+                </div>
+                <div class="mt-4 flex flex-wrap">
+                  <template x-for="tag in artist.tags">
+                    <label class="bg-fuchsia-300 rounded-xl p-2 mr-2 my-1 font-extralight text-sm" x-text="tag"></label>
+                  </template>
+                </div>
+                </ul>
+              </div>
+          </div>
+        </div>
+      </template>
+      </template>
+    </div>
+  </div>
+
+
+
   </div>
 
 
@@ -295,7 +647,6 @@
     <div class="container max-w-screen-xl text-white mx-auto p-12" id="contact">
       <div class="grid grid-cols-2 lg:grid-cols-3 gap-16 mx-auto">
 
-        
 
         <div>
           <h3 class="font-extralight">Kontakt</h3>
@@ -315,9 +666,9 @@
 
         <div>
           <h3 class="font-extralight">Social Media</h3>
-          <a href="https://instagram.com/tlmt_studio/" target="_blank" class="underline">Instagram</p>
-            <a href="https://linktr.ee/tlmt_studio" target="_blank" class="underline">Spotify</p>
-              <a href="https://goo.gl/maps/rkzj11Ji5gRBsWFv5" target="_blank" class="underline">Google Maps</p>
+          <a href="https://instagram.com/tlmt_studio/" target="_blank" class="underline"><p>Instagram</p></a>
+          <a href="https://linktr.ee/tlmt_studio" target="_blank" class="underline"><p>Spotify</p></a>
+          <a href="https://goo.gl/maps/rkzj11Ji5gRBsWFv5" target="_blank" class="underline"><p>Google Maps</p></a>
         </div>
 
         <div>
@@ -338,7 +689,6 @@
 
       </div>
     </div>
-  </div>
   </div>
 
 </body>
